@@ -54,4 +54,9 @@ public class NewBehaviourScript : MonoBehaviour
 
     public AudioSource sfxPlayer;
     public AudioSource musicPlayer;
-}
+
+    private void musicPlayer.clip = backgroundMusic;
+    bool musicPlayer.loop = = true;
+    private musicPlayer.Play();
+    private sfxPlayer.PlayOneShot(jump);
+    }

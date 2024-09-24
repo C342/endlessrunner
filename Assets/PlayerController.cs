@@ -57,5 +57,19 @@ public class NewBehaviourScript : MonoBehaviour
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheckPoint.position, checkRadius);
     }
+<<<<<<< HEAD
 }
     
+=======
+    public AudioClip jump;
+    public AudioClip backgroundMusic;
+
+    public AudioSource sfxPlayer;
+    public AudioSource musicPlayer;
+
+    private void musicPlayer.clip = backgroundMusic;
+    bool musicPlayer.loop = = true;
+    private musicPlayer.Play();
+    private sfxPlayer.PlayOneShot(jump);
+    }
+>>>>>>> aad5ff8bf06e35b35f41d28a40751d2016511813

@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
     public float minSpawnTime = 0.5f;
     public float maxSpawnTime = 3.0f;
 
-    void Start()
+    void Update()
     {
         {
             timeSinceLastSpawn = timeSinceLastSpawn + Time.deltaTime;
@@ -26,6 +26,5 @@ public class Spawner : MonoBehaviour
                 timeSinceLastSpawn = 0.0f;
             }
         }
-
     }
 }

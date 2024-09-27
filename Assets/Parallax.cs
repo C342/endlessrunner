@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Parallax : MonoBehaviour
 {
-    GameObject player;
+    GameObject Player;
     Renderer rend;
 
     float playerStartPos;
@@ -12,14 +12,16 @@ public class Parallax : MonoBehaviour
 
     void Start()
     {
-        player = GameObject.Find("Player");
+        Player = GameObject.Find("Player");
         rend = GetComponent<Renderer>();
-        playerStartPos = player.transform.position.x;
+        playerStartPos = Player.transform.position.x;
     }
+
 
     void Update()
     {
-        float offset = (player.transform.position.x - playerStartPos) * speed;
+        float offset = (Player.transform.position.x - playerStartPos) * speed;
+
         rend.material.SetTextureOffset("_MainTex", new Vector2(offset, 0f));
     }
 }

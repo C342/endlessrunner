@@ -16,10 +16,16 @@ public class NewBehaviourScript : MonoBehaviour
 
     private Rigidbody2D rb;
     private bool isGrounded;
+
+    public AudioClip jump;
+    public AudioSource playerSFX;
+
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        playerSFX = GetComponent<AudioSource>();
+
     }
 
     // Update is called once per frame
@@ -34,14 +40,16 @@ public class NewBehaviourScript : MonoBehaviour
         // jumping logic
         if (isGrounded && Input.GetKeyDown(KeyCode.Space))
         {
+            playerSFX.PlayOneShot(jump);
             Jump();
         }
     }
 
     private void Jump()
     {
-        // Add an upward force for jumping
+        
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+        
     }
 
     private void OnDrawGizmosSelected()

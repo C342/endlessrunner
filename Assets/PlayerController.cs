@@ -60,3 +60,4 @@ public class NewBehaviourScript : MonoBehaviour
     private musicPlayer.Play();
     private sfxPlayer.PlayOneShot(jump);
     }
+}

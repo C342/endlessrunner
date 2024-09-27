@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 5283113063251022326}
   - component: {fileID: 6541945466198325124}
   - component: {fileID: 7400526479225654430}
-  - component: {fileID: 3429589821844887436}
   - component: {fileID: -4204858181918396243}
   m_Layer: 0
   m_Name: playerEntity
@@ -160,29 +159,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &3429589821844887436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5755468043463134646}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6126ee3cec20af043aaf4148859626c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 2
-  jumpForce: 10
-  groundCheckPoint: {fileID: 0}
-  checkRadius: 0.2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  jump: {fileID: 8300000, guid: 558794b89a96d864e87dbe0c88d31b1b, type: 3}
-  backgroundMusic: {fileID: 8300000, guid: 8bcac5e0d33f3604f80af1682f502dcd, type: 3}
-  sfxPlayer: {fileID: 0}
-  musicPlayer: {fileID: 0}
 --- !u!82 &-4204858181918396243
 AudioSource:
   m_ObjectHideFlags: 0

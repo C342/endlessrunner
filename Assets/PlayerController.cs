@@ -25,7 +25,6 @@ public class NewBehaviourScript : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         playerSFX = GetComponent<AudioSource>();
-
     }
 
     // Update is called once per frame
@@ -47,25 +46,14 @@ public class NewBehaviourScript : MonoBehaviour
 
     private void Jump()
     {
-        
+
         rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-        
+
     }
 
     private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(groundCheckPoint.position, checkRadius);
-    }
-    public AudioClip jump;
-    public AudioClip backgroundMusic;
-
-    public AudioSource sfxPlayer;
-    public AudioSource musicPlayer;
-
-    private void musicPlayer.clip = backgroundMusic;
-    bool musicPlayer.loop = = true;
-    private musicPlayer.Play();
-    private sfxPlayer.PlayOneShot(jump);
     }
 }

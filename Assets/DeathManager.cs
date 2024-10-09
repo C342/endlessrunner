@@ -9,7 +9,7 @@ public class DeathManager : MonoBehaviour
     public void ShowDeathScreen()
     {
         deathScreenCanvas.SetActive(true);
-        Time.timeScale = 0f;
+        Time.timeScale = 1f;
     }
 
     public void RestartGame()

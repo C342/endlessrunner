@@ -2669,9 +2669,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5755468043463134646, guid: bea4d34acde11334eb880e7df2ae3594, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1974197924998500338}
-    - targetCorrespondingSourceObject: {fileID: 5755468043463134646, guid: bea4d34acde11334eb880e7df2ae3594, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1974197924998500343}
   m_SourcePrefab: {fileID: 100100000, guid: bea4d34acde11334eb880e7df2ae3594, type: 3}
 --- !u!4 &1974197924998500328 stripped
 Transform:
@@ -2696,7 +2693,7 @@ MonoBehaviour:
   checkRadius: 0.66
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   jump: {fileID: 8300000, guid: 558794b89a96d864e87dbe0c88d31b1b, type: 3}
   playerSFX: {fileID: 0}
 --- !u!114 &1974197924998500338
@@ -2712,20 +2709,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fallThreshold: -10
---- !u!114 &1974197924998500343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 491142625}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6070b317bdb5f3b44a600ee72a9d76fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 0}
-  highscoreText: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
